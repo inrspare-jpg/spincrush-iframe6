@@ -1,85 +1,121 @@
-<div style="background:#2c2c2c; padding:30px; font-family:'Segoe UI', Arial, sans-serif; color:#e0e0e0; max-width:800px; margin:auto; border-radius:15px; box-shadow:0 0 20px rgba(0,0,0,0.4);">
+<div style="position:relative; width:100%; min-height:100vh; background:#1a1a1a; overflow:hidden; font-family:'Segoe UI', Arial, sans-serif; color:#e0e0e0; padding:20px; box-sizing:border-box;">
 
-  <div style="text-align:center; margin-bottom:20px;">
-    <img src="https://new.heliusnew.com/uploads/image/20250813/1755065939953469.png" alt="Spin Crush Logo" style="max-width:130px; filter:drop-shadow(0 0 8px #00ff88); animation:pulse 2s infinite;">
-  </div>
+  <div id="bgParticles" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;"></div>
 
-  <h2 style="text-align:center; font-size:28px; color:#00ff88; margin-bottom:15px;">
-    Join Spin Crush<br>
-    And Earn FREE CASH!
-  </h2>
+  <div class="coin-animation">💰</div>
+  <div class="coin-animation">💰</div>
+  <div class="coin-animation">💰</div>
+  <div class="coin-animation">💰</div>
+  <div class="coin-animation">💰</div>
+  <div class="coin-animation">💰</div>
+  <div class="coin-animation">💰</div>
+  <div class="coin-animation">💰</div>
 
-  <p style="font-size:16px; line-height:1.6; text-align:center;">
-    Bring your friends and family to join <b>Spin Crush</b> and earn your <span style="color:#00ff88;">FreeCash</span>!  
-    Each referral gets you closer to exciting rewards and <span style="color:#00ff88;">FreeCash</span>. Share the fun, share the wins, and turn every game into a chance to bond and earn.
-  </p>
+  <div style="position:relative; z-index:1; max-width:700px; margin:auto; text-align:center;">
 
-  <div style="text-align:center; margin:30px 0;">
-    <a href="https://d35xoc2ezi3ki5.cloudfront.net/safe_spincrush.apk" style="display:inline-block; background:linear-gradient(135deg, #00ff88, #00b366); color:#fff; padding:15px 30px; font-size:18px; font-weight:bold; text-decoration:none; border-radius:50px; box-shadow:0 5px 15px rgba(0,255,136,0.3); transition:all 0.3s ease;">
-      DOWNLOAD NOW
-    </a>
-  </div>
-
-  <div style="background:#4d4d4d; padding:30px; font-family:'Segoe UI', Arial, sans-serif; color:#e0e0e0; max-width:900px; margin:auto; border-radius:15px;">
-
-    <div style="display:flex; gap:20px; background:#3a3a3a; border-radius:12px; margin-bottom:20px; overflow:hidden; flex-wrap:wrap;">
-      <div style="flex:1 1 200px;">
-        <img src="https://new.heliusnew.com/uploads/image/20250815/1755262293662282.jpg" alt="Select Freecash" style="width:100%; height:150px; object-fit:cover; border-radius:12px 0 0 12px;">
-      </div>
-      <div style="flex:2 1 250px; padding:15px;">
-        <h3 style="color:#00ff88; margin-top:0;">1.Select Freecash </h3>
-        <p>In the main lobby, tap on the Freecash icon.</p>
-      </div>
+    <div style="margin-bottom:20px;">
+      <img src="https://new.heliusnew.com/uploads/image/20250813/1755065939953469.png" alt="Spin Crush Logo" class="logo" style="width:200px; filter:drop-shadow(0 0 15px #00ff88); animation:lightning 1.5s infinite;">
     </div>
 
-    <div style="display:flex; gap:20px; background:#3a3a3a; border-radius:12px; margin-bottom:20px; overflow:hidden; flex-wrap:wrap;">
-      <div style="flex:1 1 200px;">
-        <img src="https://new.heliusnew.com/uploads/image/20250815/1755264056858449.jpg" alt="Share with Friends" style="width:100%; height:150px; object-fit:cover; border-radius:12px 0 0 12px;">
-      </div>
-      <div style="flex:2 1 250px; padding:15px;">
-        <h3 style="color:#00ff88; margin-top:0;">2. Share with Friends</h3>
-        <p>Share on your social media or use the WhatsApp number prepared for your referral.</p>
-      </div>
+    <p style="font-size:20px; line-height:1.6; margin-bottom:25px;">
+      Bring your friends and family to join <b>Spin Crush</b> and earn your <span style="color:#00ff88;">FreeCash</span>! 
+      Each referral gets you closer to exciting rewards and <span style="color:#00ff88;">FreeCash</span>. 
+      Share the fun, share the wins, and turn every game into a chance to bond and earn.
+    </p>
+
+    <div style="margin-bottom:30px;">
+      <a href="https://d35xoc2ezi3ki5.cloudfront.net/safe_spincrush.apk" class="download-btn">
+         DOWNLOAD NOW
+      </a>
     </div>
 
-    <div style="display:flex; gap:20px; background:#3a3a3a; border-radius:12px; margin-bottom:20px; overflow:hidden; flex-wrap:wrap;">
-      <div style="flex:1 1 200px;">
-        <img src="https://new.heliusnew.com/uploads/image/20250815/1755264084859451.jpg" alt="Earn Rewards" style="width:100%; height:150px; object-fit:cover; border-radius:12px 0 0 12px;">
+    <div class="steps-container">
+      <div class="step-card">
+        <img src="https://new.heliusnew.com/uploads/image/20250815/1755262293662282.jpg" alt="Step 1">
+        <h3>1. Select Freecash</h3>
+        <p>Tap the Freecash icon in lobby</p>
       </div>
-      <div style="flex:2 1 250px; padding:15px;">
-        <h3 style="color:#00ff88; margin-top:0;">3. Earn Rewards</h3>
-        <p>When your friends download the app and start playing through your link, you'll start earning!</p>
+      <div class="step-card">
+        <img src="https://new.heliusnew.com/uploads/image/20250815/1755264056858449.jpg" alt="Step 2">
+        <h3>2. Share with Friends</h3>
+        <p>Share via social media</p>
       </div>
-    </div>
-
-    <div style="display:flex; gap:20px; background:#3a3a3a; border-radius:12px; margin-bottom:20px; overflow:hidden; flex-wrap:wrap;">
-      <div style="flex:1 1 200px;">
-        <img src="https://new.heliusnew.com/uploads/image/20250815/1755264107255626.jpg" alt="Withdraw Your Bonus" style="width:100%; height:150px; object-fit:cover; border-radius:12px 0 0 12px;">
+      <div class="step-card">
+        <img src="https://new.heliusnew.com/uploads/image/20250815/1755264084859451.jpg" alt="Step 3">
+        <h3>3. Earn Rewards</h3>
+        <p>Get money when friends join</p>
       </div>
-      <div style="flex:2 1 250px; padding:15px;">
-        <h3 style="color:#00ff88; margin-top:0;">4. Withdraw Your Bonus</h3>
-        <p>Once your Freecash reaches ₹200, you can withdraw your balance directly.</p>
+      <div class="step-card">
+        <img src="https://new.heliusnew.com/uploads/image/20250815/1755264107255626.jpg" alt="Step 4">
+        <h3>4. Withdraw Cash</h3>
+        <p>Withdraw at ₹200 balance</p>
       </div>
     </div>
   </div>
-
-  <style>
-    @media (max-width:640px){
-      div[style*="display:flex"]{
-        flex-direction:column;
-      }
-      div[style*="border-radius:12px 0 0 12px"]{
-        border-radius:12px 12px 0 0;
-      }
-    }
-  </style>
-
 </div>
 
 <style>
-@keyframes pulse {
-  0% { transform: scale(1); filter: drop-shadow(0 0 8px #00ff88); }
-  50% { transform: scale(1.05); filter: drop-shadow(0 0 15px #00ff88); }
-  100% { transform: scale(1); filter: drop-shadow(0 0 8px #00ff88); }
+@keyframes lightning {
+  0% { filter: drop-shadow(0 0 8px #00ff88); }
+  50% { filter: drop-shadow(0 0 25px #00ff88) drop-shadow(0 0 15px #00b366); }
+  100% { filter: drop-shadow(0 0 8px #00ff88); }
+}
+
+@keyframes coinFall {
+  0% { transform: translateY(-50px) rotate(0deg); opacity:0; }
+  20% { opacity:1; }
+  60% { transform: translateY(80%) rotate(180deg); }
+  80% { transform: translateY(85%) rotate(270deg); }
+  100% { transform: translateY(1000px) rotate(360deg); opacity:0; }
+}
+.coin-animation { position:absolute; top:-50px; font-size:20px; animation:coinFall 6s linear infinite; opacity:0; }
+
+.coin-animation:nth-child(1){ left:5%; animation-delay:0s;}
+.coin-animation:nth-child(2){ left:15%; animation-delay:0.5s;}
+.coin-animation:nth-child(3){ left:25%; animation-delay:1s;}
+.coin-animation:nth-child(4){ left:35%; animation-delay:1.5s;}
+.coin-animation:nth-child(5){ left:45%; animation-delay:2s;}
+.coin-animation:nth-child(6){ left:55%; animation-delay:2.5s;}
+.coin-animation:nth-child(7){ left:65%; animation-delay:3s;}
+.coin-animation:nth-child(8){ left:75%; animation-delay:3.5s;}
+.coin-animation:nth-child(9){ left:85%; animation-delay:4s;}
+
+.steps-container { display:flex; flex-direction:column; gap:25px; align-items:center; }
+.step-card {
+  background:rgba(40,40,40,0.95);
+  backdrop-filter:blur(5px);
+  border-radius:15px;
+  overflow:hidden;
+  border:1px solid #333;
+  width:100%;
+  text-align:center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.step-card:hover { transform: scale(1.03); box-shadow:0 15px 25px rgba(0,255,136,0.6); }
+.step-card img { width:100%; height:auto; display:block; border-bottom:1px solid #444; }
+.step-card h3 { color:#00ff88; margin:10px 0 5px; font-size:36px; }
+.step-card p { color:#ccc; font-size:28px; margin:0 10px 10px; }
+
+.download-btn {
+  display:inline-block; background:linear-gradient(135deg, #00ff88, #00b366);
+  color:#fff; padding:14px 28px; font-size:16px; font-weight:bold;
+  text-decoration:none; border-radius:50px; box-shadow:0 5px 20px rgba(0,255,136,0.4);
+  transition:all 0.3s; cursor:pointer;
+}
+.download-btn:hover { transform:scale(1.05); box-shadow:0 7px 25px rgba(0,255,136,0.6); }
+
+#bgParticles {
+  background-image: radial-gradient(circle, rgba(0,255,136,0.1) 2px, transparent 2px),
+                    radial-gradient(circle, rgba(0,179,102,0.1) 1px, transparent 1px);
+  background-size:50px 50px, 30px 30px;
+  animation: moveParticles 30s linear infinite;
+}
+@keyframes moveParticles { 0% { background-position:0 0,0 0; } 100% { background-position:1000px 1000px,500px 500px; } }
+
+@media(max-width:768px){
+  .step-card { max-width:100%; }
+  .step-card h3 { font-size:48px; }
+  .download-btn { padding:12px 24px; font-size:16px; }
+  p { font-size:36px; }
 }
 </style>
